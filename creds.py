@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
-"""Minimal credential helper based on README behavior.
-
-This commit recreates the PR after a merge issue, with no functional changes.
+"""The first public release of creds! yay!
+/swesecnerd
 """
 
 from __future__ import annotations
