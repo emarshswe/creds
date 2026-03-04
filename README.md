@@ -1,4 +1,11 @@
 # creds
+If you are doing a CTF or a pentest and stumble across a password, username, or maybe even full credentials, your normal response is likely to save that in your notes for future reference. Most of us also create files that we can use with tools to password spray a list of users or to just keep track of that credential that we found. I tend to end upp with three files: users, passwords, and credentials. 
+
+Why? because I want to be able to leverage "users" and "passwords" separately. Full credentials (like dbadmin:DBpassword) are often bound to a realm, like Wordpress, but I always want to test password reuse across other services. This means I end up copying and pasting the username to one file and the password to another file. I also want to keep the original so that usually stays in the credentials file. I end up with the username "dbadmin" in the users file, "DBpassword" in the passwords file, and finally "dbadmin:DBpassword" in the credentials file. This might sound excessive, but staying organized kept me successfull in the IT-security business for twenty five years and counting (and got me my OSCP+), so I'll continue to do that ;-)
+
+Creds automates this process. In the example above I would run `creds 'dbadmin':'DBpassword'` and the three parts would end up in three preset files that can be queried from creds itself or used with other tools. It's not about solving a complex problem, it's about removing friction and stopping you from forgetting stuff.
+
+Sounds smart? Keep reading!
 
 ## Description
 Creds is made to be extremely simple to use.
